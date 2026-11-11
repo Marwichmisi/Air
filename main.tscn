@@ -22,3 +22,43 @@ rayon = 60.0
 script = ExtResource("3_lquwl")
 rayon = 60.0
 couleur_coeur = Color(0.101960786, 0.34901962, 0.8509804, 1)
+
+[node name="Resultat" type="CanvasLayer" parent="." unique_id=445722220]
+
+[node name="Panneau" type="Control" parent="Resultat" unique_id=1442542020]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="TitreBas" type="Label" parent="Resultat/Panneau" unique_id=1811898639]
+layout_mode = 0
+text = "GAGNÉ !"
+
+[node name="TitreHaut" type="Label" parent="Resultat/Panneau" unique_id=479240979]
+layout_mode = 0
+text = "PERDU"
+
+[node name="Etoile1" type="Label" parent="Resultat/Panneau" unique_id=916911298]
+layout_mode = 0
+text = "★"
+
+[node name="Etoile2" type="Label" parent="Resultat/Panneau" unique_id=28376922]
+layout_mode = 0
+text = "★"
+
+[node name="Etoile3" type="Label" parent="Resultat/Panneau" unique_id=154281423]
+layout_mode = 0
+text = "★"
+
+[node name="Recommencer" type="Button" parent="Resultat/Panneau" unique_id=689955519]
+layout_mode = 0
+text = "Recommencer"
+
+[node name="Menu" type="Button" parent="Resultat/Panneau" unique_id=480504983]
+layout_mode = 0
+text = "Menu"
+
+[node name="Voile" type="ColorRect" parent="Resultat/Panneau" unique_id=1262072158]
+layout_mode = 0
+
+[connection signal="pressed" from="Resultat/Panneau/Recommencer" to="." method="_sur_recommencer"]
+[connection signal="pressed" from="Resultat/Panneau/Menu" to="." method="_sur_menu"]
