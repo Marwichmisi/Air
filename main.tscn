@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cg42oelm1t2lc"]
+
+[ext_resource type="Script" uid="uid://e1wucqfqehma" path="res://scripts/main.gd" id="1_h2yge"]
+[ext_resource type="Script" uid="uid://cdiw510vo82rx" path="res://scripts/table_view.gd" id="2_1bvp3"]
+[ext_resource type="Script" uid="uid://b608mysavphxk" path="res://scripts/disc_view.gd" id="3_lquwl"]
+
+[node name="Main" type="Node2D" unique_id=1605510558]
+script = ExtResource("1_h2yge")
+
+[node name="TableArt" type="Node2D" parent="." unique_id=1937004272]
+script = ExtResource("2_1bvp3")
+
+[node name="Palet" type="Node2D" parent="." unique_id=452466175]
+script = ExtResource("3_lquwl")
+couleur_coeur = Color(0.13725491, 0.15294118, 0.2, 1)
+
+[node name="MailletBas" type="Node2D" parent="." unique_id=567500629]
+script = ExtResource("3_lquwl")
+rayon = 60.0
+
+[node name="MailletHaut" type="Node2D" parent="." unique_id=718004697]
+script = ExtResource("3_lquwl")
+rayon = 60.0
+couleur_coeur = Color(0.101960786, 0.34901962, 0.8509804, 1)
